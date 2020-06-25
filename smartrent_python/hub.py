@@ -1,4 +1,4 @@
-import logging
+gimport logging
 from smartrent_python.device import Device
 from smartrent_python.devices.honeywell_thermostat import HoneywellThermostat
 from smartrent_python.schemas.device import DeviceRawSchema, DeviceParsedSchema
@@ -33,3 +33,6 @@ class Hub:
             devices.append(device)
 
         self.devices = {device.id: device for device in devices}
+
+    def __repr__(self):
+        return f'Hub ({self.id})'

@@ -16,13 +16,13 @@ This is a wrapper around the Smartrent home automation API.
 # Now that we're authenticated, let's see which hubs we have access to
 > client.get_hubs()
 > client.hubs
-[<Hub>]
+[<Hub (123)>]
 
 # Let's see which devices are linked to this hub
 > hub = client.hubs[0]
 > hub.get_devices()
 > hub.devices
-[<Honeywell Thermostat>, <Yale Door Lock>, <Zipato Water Sensor>]
+[<Honeywell Thermostat (12345)>, <Yale Door Lock (34567)>, <Zipato Water Sensor (56789)>]
 
 # Let's interact with the thermostat - each device's settings are available in the devices directory
 > thermostat = hub.devices[0]
