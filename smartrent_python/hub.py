@@ -1,4 +1,4 @@
-gimport logging
+import logging
 from smartrent_python.device import Device
 from smartrent_python.devices.honeywell_thermostat import HoneywellThermostat
 from smartrent_python.schemas.device import DeviceRawSchema, DeviceParsedSchema
