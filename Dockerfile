@@ -7,4 +7,4 @@ ENV PYTHONPATH=/usr/src
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
 
-COPY ./smartrent_python ./smartrent_python
+WORKDIR /var/src

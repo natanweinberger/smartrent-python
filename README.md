@@ -5,6 +5,16 @@ This is a wrapper around the Smartrent home automation API.
 - [Example](#example)
 - [API](#api)
 
+## Set up
+
+1. You can use docker-compose.
+
+```bash
+docker compose run smartrent bash
+```
+
+2. Or, you can install the dependencies in `requirements.txt` into your local environment.
+
 ## Example
 
 ```python
